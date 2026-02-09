@@ -21,7 +21,7 @@ let cm = a===b;
 console.log('Чи є прямокутник квадратом? ' + cm); // 3.
 let p = 3.14; // 2.
 let r = 5;
-console.log(`Площа круга: ${p * r ** 2}`); //3.
+console.log(`Площа круга: ${p * Math.pow(r,2)}`); // 3.
 let num1 = 80; // 2.
 let num2 = 60;
-console.log("Середнє арифметичне: " + (num1 + num2/2));
+console.log("Середнє арифметичне: " + ((num1 + num2)/2));
