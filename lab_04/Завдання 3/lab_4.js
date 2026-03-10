@@ -1,3 +1,4 @@
+// - Header
 const header = document.createElement("div");
 header.classList.add("header");
 
@@ -18,6 +19,7 @@ header.appendChild(headertitle);
 header.appendChild(headerRight);
 document.body.appendChild(header);
 
+// - Main
 const main = document.createElement("main");
 main.classList.add("maincontent")
 
@@ -157,6 +159,7 @@ sectionMemory.append(sectionHeader, memoryDiv);
 
 main.appendChild(sectionMemory);
 
+// - Footer
 const footer = document.createElement("footer");
 footer.classList.add("page-footer");
 
