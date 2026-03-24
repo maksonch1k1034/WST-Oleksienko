@@ -7,7 +7,7 @@ class QuoteTable extends HTMLElement {
     render() {
     this.innerHTML = `
         <table class="table table-striped table-hover shadow">
-            <thead class="table-dark">
+            <thead class="table-primary">
                 <tr>
                     <th>Цитата</th>
                     <th>Автор</th>
