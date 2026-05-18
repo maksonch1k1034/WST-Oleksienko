@@ -169,15 +169,15 @@ idGenerator = (name: string, id: number): string => {
    return `${name}_${id}`;
 }
 
-console.log("Generated ID:", idGenerator("Test", 123));
+console.log("Generated ID:", idGenerator("Maksym", 14));
 
 idGenerator = createCustomerID;
 
-console.log("Generated ID (через функцію):", idGenerator("Ivan", 77));
+console.log("Generated ID (через функцію):", idGenerator("Maksym", 14));
 
 // Завданя 5.1
 createCustomer("Maksym");
-createCustomer("Maksym", 18);
+createCustomer("Maksym", NaN);
 createCustomer("Maksym", 18, "Kyiv");
 
 // Завдання 5.2
