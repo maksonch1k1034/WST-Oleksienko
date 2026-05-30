@@ -9,10 +9,10 @@ const student = {
         console.log(`Привіт, я ${this.firstName} ${this.lastName}, мій бал: ${this.score}`);
     }
 };
-student.greet(); // this вказує на об'єкт student
+student.greet(); 
 
 const greetFn = student.greet;
-greetFn(); // this втрачається, бо метод викликається вже не через student
+greetFn(); 
 
 // 1 спосіб - bind прив'язує this до student
 const greetBind = student.greet.bind(student);
@@ -47,10 +47,8 @@ const person2 = {
     lastName: "Шевченко"
 };
 
-// call - викликає функцію і передає їй контекст this = person 1 (передає аргументи окремо)
 introduce.call(person1, "Добрий день", "!");
 
-// apply - викликає функцію і передає їй контекст this = person 2 (передає аргументи масивом)
 introduce.apply(person2, ["Добрий день", "!"]);
 
 console.log("Завдання 4"); // Завдання 4
@@ -67,7 +65,6 @@ const employee = {
     salary: 20000
 }
 
-// bind- прив'язує контекст this до об'єкта employee (створює нову функцію, яка при виклику прив'язується до певного контексту)
 const calculateEmployeeTax = calculateTax.bind(employee, 18);
 
 console.log(calculateEmployeeTax(1000));
